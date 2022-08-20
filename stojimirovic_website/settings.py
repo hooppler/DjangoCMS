@@ -66,7 +66,7 @@ ROOT_URLCONF = 'stojimirovic_website.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['stojimirovic_website/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -80,6 +80,10 @@ TEMPLATES = [
             ],
         },
     },
+]
+
+CMS_TEMPLATES = [
+    ('home.html', 'Home page template'),
 ]
 
 WSGI_APPLICATION = 'stojimirovic_website.wsgi.application'
